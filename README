@@ -1,0 +1,13 @@
+# 🎤 Emotion Voice Detector
+
+Projet de détection d’émotions vocales avec LSTM, MFCC et Streamlit.
+
+## Fonctionnalités
+- Prétraitement audio (MFCCs)
+- Modèle LSTM entraîné sur des émotions
+- Interface Streamlit pour upload vocal et prédiction
+- Visualisation des résultats
+
+## Lancement de l'application
+```bash
+streamlit run app/app.py
