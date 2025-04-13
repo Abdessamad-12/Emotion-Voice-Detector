@@ -2,7 +2,7 @@ import librosa
 import numpy as np
 from keras.models import load_model
 
-model = load_model("..\model\model.h5")
+model = load_model("../model/model.h5")
 emotion_dict = {0: "angry", 1: "disgust", 2: "fear", 3: "happy", 4:"neutral", 5:"ps", 6:"sad"}
 
 
@@ -13,4 +13,4 @@ def predict_emotion(file_path):
     prediction = model.predict(mfccs)
     predicted_class = np.argmax(prediction)
     return emotion_dict[predicted_class]
-print(predict_emotion("..\data\YAF_happy\YAF_base_happy.wav"))
+print(predict_emotion("../data/YAF_happy/YAF_base_happy.wav"))
